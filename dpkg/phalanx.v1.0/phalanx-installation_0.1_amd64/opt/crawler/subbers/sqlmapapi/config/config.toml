@@ -1,0 +1,19 @@
+[mode]
+daemon = false
+daemonname="sqlmap-subber-daemon"
+[nats_server]
+addr = "nats://127.0.0.1:4222"
+streamName = "COMMANDJOB"
+flowName = "sqlmap"
+
+
+
+[target]
+executePath = "/usr/bin/python3"
+binaryPath = "/opt/crawler/binary/sqlmapapi/sqlmapapi/main.py"
+
+
+[options]
+    [options.data]
+    argv = "-d"
+    passdata = true

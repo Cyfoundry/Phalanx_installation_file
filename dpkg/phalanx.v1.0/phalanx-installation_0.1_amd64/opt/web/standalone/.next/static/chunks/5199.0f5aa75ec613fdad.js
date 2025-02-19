@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5199],{95199:function(s){s.exports=JSON.parse('{"register":"註冊","account":"帳號","password":"密碼","confirm_password":"確認密碼"}')}}]);

@@ -1,0 +1,20 @@
+version: '3.7'
+# Service
+services:
+  db:
+    image: postgres:15.1-alpine
+    restart: always
+    environment:
+      # POSTGRES_DB: postgres
+      POSTGRES_USER: root #postgres
+      POSTGRES_PASSWORD: ji394@TCFC #1234
+      PGDATA: /var/lib/postgresql/data
+      TZ: 'UTC+0'
+      PGTZ: 'UTC+0'
+    volumes:
+      - ./data:/var/lib/postgresql/data
+      - /etc/timezone:/etc/timezone
+      - /etc/localtime:/etc/localtime
+      - ./init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
+    ports:
+      - "9432:5432"

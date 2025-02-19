@@ -1,0 +1,12 @@
+[
+    {
+        "Method": "get",
+        "Uri": "http://192.168.10.188:8092/index.php?blend=test",
+        "Result": "GET http://192.168.10.188:8092/index.php?blend=test HTTP/1.1\nHost: 192.168.10.188"
+    },
+    {
+        "Method": "post",
+        "Uri": "http://192.168.10.188:8092/lib/login.php",
+        "Result": "POST http://192.168.10.188:8092/lib/login.php HTTP/1.1\nHost: 192.168.10.188\ncontent-type: application/x-www-form-urlencoded\n\n\npassword=test\u0026username=test"
+    }
+]

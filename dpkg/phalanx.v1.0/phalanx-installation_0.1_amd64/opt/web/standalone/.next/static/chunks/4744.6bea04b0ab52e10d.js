@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4744],{44744:function(e){e.exports=JSON.parse('{"title":"儀表板","targets":"目標數量","identifiedService":"已識別服務","vulnerabilities":"漏洞數量"}')}}]);

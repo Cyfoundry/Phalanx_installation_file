@@ -1,0 +1,14 @@
+[Unit]
+Description=MSF Service
+After=jobmanager.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/subber/subber_msf/
+ExecStart=/opt/subber/subber_msf/subber
+Restart=on-failure
+StandardOutput=file:/var/log/phalanx/msf.log
+StandardError=file:/var/log/phalanx/msf.log
+
+[Install]
+WantedBy=multi-user.target

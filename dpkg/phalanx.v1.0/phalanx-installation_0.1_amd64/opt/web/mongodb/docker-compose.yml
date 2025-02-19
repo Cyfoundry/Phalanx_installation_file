@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  mongo:
+    container_name: mongo1
+    image: mongo:4.4
+    restart: always
+    command:
+      [
+        "--replSet",
+        "rs0",
+        "--bind_ip_all",
+        "--port",
+        "27017",
+        "--keyFile",
+        "/data/mongodb/keyFile",
+      ]
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: tcfc202303
+    ports:
+      - 27017:27017
+    volumes:
+      - /opt/web/mongodb/data/db:/data/db
+      - /opt/web/mongodb/data/configdb:/data/configdb
+      - /opt/web/mongodb/keyFile:/data/mongodb/keyFile
+      - /config:/scripts

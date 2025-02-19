@@ -1,0 +1,13 @@
+[Match]
+Name={{.NetInterfaceName}}
+
+[Link]
+MTUBytes=1500
+
+
+[Network]
+Address={{.NetIpaddress}}
+Gateway={{.Netgateway}}
+DNS={{.Netdns}}
+
+

@@ -1,0 +1,43 @@
+id: gcp-app-engine-enum
+
+info:
+  name: GCP App Engine (Appspot) - Cloud Enumeration
+  author: initstring
+  severity: info
+  description: |
+    Searches for App Engine Apps in GCP.
+  metadata:
+    verified: true
+    max-request: 1
+  tags: cloud,cloud-enum,gcp
+
+self-contained: true
+
+variables:
+  BaseDNS: "appspot.com"
+  loginRedirect: "accounts.google.com"
+
+http:
+  - raw:
+      - |
+        GET https://{{wordlist}}.{{BaseDNS}} HTTP/1.1
+        Host: {{wordlist}}.{{BaseDNS}}
+
+    redirects: false
+
+    attack: batteringram
+    threads: 10
+
+    matchers:
+      - type: dsl
+        name: "Open GCP App Engine App"
+        dsl:
+          - "status_code==200"
+
+      - type: dsl
+        name: "Protected GCP App Engine App"
+        dsl:
+          - "status_code==302"
+          - contains(location, "login")
+        condition: and
+# digest: 490a00463044022017250b6b9f7ccf30e614e7bfb992e2e9ec13fd27556137cf4b13dc2f2a8c70b602200e352bbaebbd9dfbced84b3f9dff65c9d1b3dac47a0eec812b738a987931a14c:922c64590222798bb761d5b6d8e72950

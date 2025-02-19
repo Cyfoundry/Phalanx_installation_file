@@ -1,0 +1,16 @@
+[Unit]
+Description=Nuclei Subber service instance %i
+After=jobmanager.service
+
+[Service]
+Type=simple
+User=phalanx
+Group=phalanx
+WorkingDirectory=/opt/subber/subber_nuclei_%i/
+ExecStart=/opt/subber/subber_nuclei_%i/subber
+Restart=on-failure
+StandardOutput=file:/var/log/phalanx/nuclei_%i.log
+StandardError=file:/var/log/phalanx/nuclei_%i.log
+
+[Install]
+WantedBy=multi-user.target

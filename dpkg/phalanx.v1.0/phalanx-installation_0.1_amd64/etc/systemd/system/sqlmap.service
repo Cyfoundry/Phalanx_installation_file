@@ -1,0 +1,14 @@
+[Unit]
+Description=Sqlmap Subber Service
+After=sqlmap_server.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/crawler/subbers/sqlmapapi/
+ExecStart=/opt/crawler/subbers/sqlmapapi/subber
+Restart=on-failure
+StandardOutput=file:/var/log/phalanx/sqlmap.log
+StandardError=file:/var/log/phalanx/sqlmap.log
+
+[Install]
+WantedBy=multi-user.target

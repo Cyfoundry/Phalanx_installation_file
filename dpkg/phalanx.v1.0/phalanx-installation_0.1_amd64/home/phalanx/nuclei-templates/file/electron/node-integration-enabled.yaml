@@ -1,0 +1,21 @@
+id: node-integration-enabled
+
+info:
+  name: Electron Applications - Cross-Site Scripting & Remote Code Execution
+  author: me9187
+  severity: critical
+  description: |
+    Electron Applications is susceptible to remote code execution by way of cross-site scripting via nodeIntegration  by calling require('child_process').exec('COMMAND');.
+  reference:
+    - https://blog.yeswehack.com/yeswerhackers/exploitation/pentesting-electron-applications/
+    - https://book.hacktricks.xyz/pentesting/pentesting-web/xss-to-rce-electron-desktop-apps
+  tags: electron,file,nodejs
+
+file:
+  - extensions:
+      - all
+    matchers:
+      - type: word
+        words:
+          - "nodeIntegration: true"
+# digest: 4a0a00473045022100f1c2f407e3d860f1475606524ca3c1faf44f32f0bf0a4a888c17addbaec16cb502200a3c9c1c519b7b4df9937a4ee61ee0eff2d2f81626c0f5748b1978d268183777:922c64590222798bb761d5b6d8e72950

@@ -1,0 +1,19 @@
+#!/bin/sh
+
+set -e
+
+check_password() {
+    if [ ! "$SUDO_FORCE_REMOVE" = "yes" ]; then
+        :
+    fi
+}
+
+case $1 in
+	remove)
+		check_password;
+		;;
+	*)
+		;;
+esac
+
+exit 0

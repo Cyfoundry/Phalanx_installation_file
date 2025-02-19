@@ -1,0 +1,23 @@
+#!/bin/sh -e
+
+set -e
+
+# ref: postinst in sudo package
+
+case "$1" in
+configure)
+	for f in $(ls -b /lib/phalanx/*); do
+		fn=$(basename $f)
+		if [ ! -L /usr/sbin/$fn ]; then
+			ln -s $f /usr/sbin/$fn
+		fi
+	done
+	systemctl start phalanxDHCP
+	systemctl enable phalanxDHCP
+	;;
+abort-removal)
+	for f in /usr/sbin/phalanx*; do
+		[ -L $f ] && rm -rf $f
+	done
+	;;
+esac

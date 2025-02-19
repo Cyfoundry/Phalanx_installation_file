@@ -1,0 +1,40 @@
+id: gcp-bucket-enum
+
+info:
+  name: GCP Buckets - Cloud Enumeration
+  author: initstring
+  severity: info
+  description: |
+    Searches for open and protected buckets in GCP.
+  metadata:
+    verified: true
+    max-request: 1
+  tags: cloud,cloud-enum,gcp
+
+self-contained: true
+
+variables:
+  BaseDNS: "storage.googleapis.com"
+
+http:
+  - raw:
+      - |
+        GET http://{{wordlist}}.{{BaseDNS}} HTTP/1.1
+        Host: {{wordlist}}.{{BaseDNS}}
+
+    redirects: false
+
+    attack: batteringram
+    threads: 10
+
+    matchers:
+      - type: status
+        name: "Open GCP Bucket"
+        status:
+          - 200
+
+      - type: status
+        name: "Protected GCP Bucket"
+        status:
+          - 403
+# digest: 4b0a00483046022100baff7bb9e12a115a59a755c8188c3544cc8497dc3a17860023486de9f4992def02210096b193c8507208f3d30cd9fc716d4be46cd9acb83418f2fa62f0d10ce305d026:922c64590222798bb761d5b6d8e72950

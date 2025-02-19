@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[6734],{16734:function(e){e.exports=JSON.parse('{"title":"Dashboard","targets":"目標數量","identifiedService":"已識別服務","vulnerabilities":"漏洞數量"}')}}]);

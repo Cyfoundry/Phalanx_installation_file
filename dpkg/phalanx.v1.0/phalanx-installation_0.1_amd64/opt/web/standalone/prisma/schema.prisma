@@ -1,0 +1,226 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["views"]
+  binaryTargets   = ["native", "debian-openssl-1.1.x", "debian-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model authorization_token {
+  id                  BigInt   @id @default(autoincrement())
+  mac                 String   @db.VarChar(256)
+  authorization_token String   @db.VarChar(256)
+  start_time          DateTime @db.Timestamptz(6)
+  end_time            DateTime @db.Timestamptz(6)
+  used                Int?
+  usage_count         Int?
+}
+
+model flow_control {
+  id        BigInt  @id @default(autoincrement())
+  condition String  @db.VarChar(64)
+  next_flow String  @db.VarChar(64)
+  sort      BigInt?
+}
+
+model forgot_temp {
+  id            BigInt   @id(map: "pk_forgot_temp") @default(autoincrement())
+  member_id     BigInt
+  expire_time   DateTime @db.Timestamp(6)
+  code          String   @db.VarChar(128)
+  redirect_path String?  @db.VarChar(512)
+  member        member   @relation(fields: [member_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_forgot_temp_member_id")
+}
+
+model member {
+  id             BigInt           @id(map: "pk_member") @default(autoincrement())
+  account        String           @db.VarChar(64)
+  name           String           @db.VarChar(128)
+  real_name      String?          @db.VarChar(128)
+  email          String           @db.VarChar(128)
+  spare_email    String?          @db.VarChar(128)
+  mobile_phone   String?          @db.VarChar(16)
+  city_phone     String?          @db.VarChar(16)
+  city_phone_ext String?          @db.VarChar(16)
+  address        String?          @db.VarChar(16)
+  is_enable      Boolean
+  create_id      BigInt
+  create_time    DateTime         @db.Timestamp(6)
+  modify_id      BigInt
+  modify_time    DateTime         @db.Timestamp(6)
+  forgot_temp    forgot_temp[]
+  member_history member_history[]
+  member_role    member_role[]
+}
+
+model member_history {
+  id          BigInt   @id(map: "pk_member_history") @default(autoincrement())
+  member_id   BigInt
+  password    String   @db.VarChar(128)
+  salt        String   @db.VarChar(32)
+  error_count Int      @default(0) @db.SmallInt
+  create_id   BigInt
+  create_time DateTime @db.Timestamp(6)
+  modify_id   BigInt
+  modify_time DateTime @db.Timestamp(6)
+  member      member   @relation(fields: [member_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_member_history_member_id")
+}
+
+model member_role {
+  id        BigInt @id(map: "pk_member_role") @default(autoincrement())
+  role_id   BigInt
+  member_id BigInt
+  member    member @relation(fields: [member_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_member_role_member_id")
+  role      role   @relation(fields: [role_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_member_role_role_id")
+}
+
+model menu {
+  id          BigInt       @id(map: "pk_menu") @default(autoincrement())
+  title       String       @db.VarChar(32)
+  icon        String?      @db.VarChar(32)
+  url         String       @db.VarChar(128)
+  parent      BigInt?
+  description String?      @db.VarChar(128)
+  sort        BigInt?
+  is_enable   Boolean
+  is_show     Boolean
+  create_id   BigInt
+  create_time DateTime     @db.Timestamp(6)
+  modify_id   BigInt
+  modify_time DateTime     @db.Timestamp(6)
+  power       power[]
+  role_power  role_power[]
+}
+
+model power {
+  id          BigInt       @id(map: "pk_power") @default(autoincrement())
+  menu_id     BigInt
+  title       String       @db.VarChar(32)
+  code        String       @db.VarChar(32)
+  description String?      @db.VarChar(128)
+  sort        BigInt?
+  is_enable   Boolean
+  create_id   BigInt
+  create_time DateTime     @db.Timestamp(6)
+  modify_id   BigInt
+  modify_time DateTime     @db.Timestamp(6)
+  menu        menu         @relation(fields: [menu_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_power_menu_id")
+  role_power  role_power[]
+}
+
+model resource_message {
+  id            BigInt   @id @default(autoincrement())
+  message_key   String   @db.VarChar(128)
+  message_value String
+  message_descr String   @db.VarChar(256)
+  create_id     BigInt
+  create_time   DateTime @db.Timestamp(6)
+  modify_id     BigInt
+  modify_time   DateTime @db.Timestamp(6)
+}
+
+model role {
+  id          BigInt        @id(map: "pk_role") @default(autoincrement())
+  title       String        @db.VarChar(32)
+  description String?       @db.VarChar(128)
+  sort        BigInt?
+  is_enable   Boolean
+  create_id   BigInt
+  create_time DateTime      @db.Timestamp(6)
+  modify_id   BigInt
+  modify_time DateTime      @db.Timestamp(6)
+  member_role member_role[]
+  role_power  role_power[]
+}
+
+model role_power {
+  id          BigInt   @id(map: "pk_role_power") @default(autoincrement())
+  role_id     BigInt
+  menu_id     BigInt
+  power_id    BigInt?
+  create_id   BigInt
+  create_time DateTime @db.Timestamp(6)
+  modify_id   BigInt
+  modify_time DateTime @db.Timestamp(6)
+  menu        menu     @relation(fields: [menu_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_role_power_menu_id")
+  power       power?   @relation(fields: [power_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_role_power_power_id")
+  role        role     @relation(fields: [role_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_role_power_role_id")
+}
+
+model scan_tool {
+  id          BigInt @id @default(autoincrement())
+  name        String @db.VarChar(64)
+  grpc_server String @db.VarChar(64)
+}
+
+model setting {
+  id      BigInt @id @default(autoincrement())
+  setting Json   @db.Json
+}
+
+model system_log {
+  id        Int      @id @default(autoincrement())
+  level     String   @db.VarChar(128)
+  message   Json     @db.Json
+  timestamp DateTime @db.Timestamp(6)
+}
+
+model usage_record {
+  id       Int   @id @default(autoincrement())
+  duration Float
+}
+
+model vulnerability {
+  id          BigInt   @id @default(autoincrement())
+  name        String   @db.VarChar(64)
+  target      Json?    @db.Json
+  scan_type   Int
+  scan_status Int?
+  description String?  @db.VarChar(64)
+  scan_time   DateTime @db.Timestamp(6)
+  create_id   BigInt
+  create_time DateTime @db.Timestamp(6)
+  modify_id   BigInt
+  modify_time DateTime @db.Timestamp(6)
+}
+
+model update {
+  id      BigInt @id @default(autoincrement())
+  version String @db.VarChar(256)
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view v_member_role {
+  id         BigInt  @unique
+  member_id  BigInt?
+  role_id    BigInt?
+  role_title String? @db.VarChar(32)
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view v_power {
+  id          BigInt   @unique
+  menu_id     BigInt?
+  menu_name   String?  @db.VarChar(32)
+  menu_sort   BigInt?
+  title       String?  @db.VarChar(32)
+  code        String?  @db.VarChar(32)
+  description String?  @db.VarChar(128)
+  sort        BigInt?
+  is_enable   Boolean?
+}
+
+/// The underlying view does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+view v_role_power {
+  id          BigInt  @unique
+  role_id     BigInt?
+  role_title  String? @db.VarChar(32)
+  menu_id     BigInt?
+  menu_title  String? @db.VarChar(32)
+  power_id    BigInt?
+  power_title String? @db.VarChar(32)
+  power_code  String? @db.VarChar(32)
+}

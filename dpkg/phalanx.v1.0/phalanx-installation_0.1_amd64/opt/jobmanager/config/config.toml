@@ -1,0 +1,5 @@
+[mode]
+daemon = false
+[nats_server]
+addr = "nats://127.0.0.1:4222"
+streamName = "COMMANDJOB"

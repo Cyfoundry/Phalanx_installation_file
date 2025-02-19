@@ -1,0 +1,15 @@
+[Unit]
+Description=Jobmanager Service
+After=endpoint.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/jobmanager/
+ExecStart=/opt/jobmanager/jobmanager
+Restart=on-failure
+StandardOutput=file:/var/log/phalanx/jobmanager.log
+StandardError=file:/var/log/phalanx/jobmanager.log
+
+[Install]
+WantedBy=multi-user.target
+

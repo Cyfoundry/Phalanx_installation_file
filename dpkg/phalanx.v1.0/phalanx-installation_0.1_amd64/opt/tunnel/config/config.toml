@@ -1,0 +1,5 @@
+[tunnel_server]
+addr = ":50007"
+use_tls = false
+crt_file = "server.pem"
+key_file = "server.key"

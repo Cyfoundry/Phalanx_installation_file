@@ -1,0 +1,9 @@
+[Unit]
+Description=msf rpc service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/msfrpcd -U user -P pass
+
+[Install]
+WantedBy=multi-user.target

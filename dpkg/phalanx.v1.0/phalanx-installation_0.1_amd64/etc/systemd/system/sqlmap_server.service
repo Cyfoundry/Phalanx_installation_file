@@ -1,0 +1,14 @@
+[Unit]
+Description=Sqlmap Server Service
+After=jobmanager.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/crawler/
+ExecStart=/usr/bin/python3 /opt/crawler/server.py
+Restart=on-failure
+StandardOutput=file:/var/log/phalanx/sqlmap_server.log
+StandardError=file:/var/log/phalanx/sqlmap_server.log
+
+[Install]
+WantedBy=multi-user.target

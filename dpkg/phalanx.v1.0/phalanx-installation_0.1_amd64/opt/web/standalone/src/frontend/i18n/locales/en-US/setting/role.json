@@ -1,0 +1,14 @@
+{
+    "roleManage": "Role Manage",
+    "create": "Create",
+    "edit": "Edit",
+    "required": "{{name}} is required",
+    "title": "Title",
+    "description": "Description",
+    "sort": "Sort",
+    "isEnable": "IsEnable",
+    "confirmDeletion": "Deletion {{title}}?",
+    "typeToConfirmDelete": "Type [{{title}}] to Confirm Deletion",
+    "enterNameToDelete": "Enter the title of the role to confirm deletion:",
+    "nameMismatch": "The entered title does not match the role title."
+}

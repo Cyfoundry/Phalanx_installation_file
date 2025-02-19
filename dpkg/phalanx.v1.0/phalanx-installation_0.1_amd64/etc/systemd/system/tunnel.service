@@ -1,0 +1,14 @@
+[Unit]
+Description=Tunnel Service
+After=jobmanager.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/tunnel/
+ExecStart=/opt/tunnel/tunnel-service
+Restart=on-failure
+StandardOutput=file:/var/log/phalanx/tunnel.log
+StandardError=file:/var/log/phalanx/tunnel.log
+
+[Install]
+WantedBy=multi-user.target

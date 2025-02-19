@@ -1,0 +1,23 @@
+[mode]
+daemon = false 
+daemonname= "nmap-subber-daemon"
+
+[nats_server]
+addr = "nats://127.0.0.1:4222"
+streamName = "COMMANDJOB"
+flowName = "nmap"
+
+
+[target]
+executePath = "/usr/bin/python3"
+binaryPath = "/opt/subber/subber_nmap_1/dict_nmap/nmap_main.py"
+
+[options]
+    [options.t]
+    argv="-t"
+    [options.speed]
+    argv = "--speed"
+    [options.depth]
+    argv = "--depth"
+    [options.masterid]
+    argv = "--masterid"

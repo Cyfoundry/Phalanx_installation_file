@@ -1,0 +1,1 @@
+"use strict";exports.id=9865,exports.ids=[9865],exports.modules={39865:e=>{e.exports=JSON.parse('{"home":"主頁","task":"任務","reconnaissance":"偵查","exploit":"入侵攻擊模擬","setting":"系統設置","menu":"選單管理","power":"權限管理","role":"角色管理","user":"用戶管理","durationTitle":"請連線取得授權延長","durationContent":"請確認使用方式符合合約規範，並連線取得延長授權，如有任何疑問請聯繫sales@cyfoundry.com","Validate":"授權驗證"}')}};

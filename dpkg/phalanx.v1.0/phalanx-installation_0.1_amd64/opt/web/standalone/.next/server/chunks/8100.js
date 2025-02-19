@@ -1,0 +1,1 @@
+"use strict";exports.id=8100,exports.ids=[8100],exports.modules={88100:e=>{e.exports=JSON.parse('{"title":"Dashboard","targets":"目標數量","identifiedService":"已識別服務","vulnerabilities":"漏洞數量"}')}};

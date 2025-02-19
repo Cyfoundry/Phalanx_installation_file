@@ -1,0 +1,28 @@
+{
+  "app/[lng]/(index)/task/reconnaissance/executive/[id]/page.tsx -> @/frontend/components/chart/donut": {
+    "id": 79579,
+    "files": [
+      "static/chunks/4ead511a.8d7fa177a5bbbdad.js",
+      "static/chunks/9579.6982c156d266c1ef.js"
+    ]
+  },
+  "app/[lng]/(index)/task/reconnaissance/pdf/[id]/page.tsx -> @/frontend/components/chart/donut": {
+    "id": 79579,
+    "files": [
+      "static/chunks/4ead511a.8d7fa177a5bbbdad.js",
+      "static/chunks/9579.6982c156d266c1ef.js"
+    ]
+  },
+  "app/[lng]/(public)/public/login/page.tsx -> @mui/material/InputAdornment": {
+    "id": 13245,
+    "files": [
+      "static/chunks/3245.ebc4b39d795e0756.js"
+    ]
+  },
+  "app/[lng]/(public)/public/register/page.tsx -> @mui/material/InputAdornment": {
+    "id": 13245,
+    "files": [
+      "static/chunks/3245.ebc4b39d795e0756.js"
+    ]
+  }
+}

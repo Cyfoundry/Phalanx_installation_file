@@ -1,0 +1,6 @@
+[scannerConfig]
+useProxy = false
+proxy = ""
+payloadsPath = "/opt/crawler/binary/sqlidetector/data/payloads.txt"
+sqlErrorPath = "/opt/crawler/binary/sqlidetector/data/sql_errors.txt"
+userAgetPath = "/opt/crawler/binary/sqlidetector/data/user_agents.txt"

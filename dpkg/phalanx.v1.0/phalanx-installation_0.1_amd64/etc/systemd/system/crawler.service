@@ -1,0 +1,14 @@
+[Unit]
+Description=Crawler Subber Service
+After=jobmanager.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/crawler/subbers/crawler/
+ExecStart=/opt/crawler/subbers/crawler/subber
+Restart=on-failure
+StandardOutput=file:/var/log/phalanx/crawler.log
+StandardError=file:/var/log/phalanx/crawler.log
+
+[Install]
+WantedBy=multi-user.target

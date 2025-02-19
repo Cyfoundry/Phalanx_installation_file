@@ -1,0 +1,49 @@
+{
+  "summary": "CyFoundry's Phalanx Scan Report delivers an in-depth examination of your network infrastructure's security stance. By employing sophisticated scanning methodologies, this report pinpoints potential vulnerabilities and security flaws that could be leveraged by adversaries for malicious purposes.",
+  "severity": "The Common Vulnerability Scoring System (CVSS) serves as a standardized framework to assess the severity of security vulnerabilities within software. By evaluating the key attributes of a vulnerability, the CVSS generates a numerical score that reflects its severity level. This score facilitates the prioritization of response and mitigation efforts, allowing organizations to address vulnerabilities based on the risk they present to the system or the organization as a whole.",
+  "Report Generation time": "Report Generation Time",
+  "Scan Start Time": "Scan Start Time",
+  "Scan End Time": "Scan End Time",
+  "Total Vulnerabilities": "Total Vulnerabilities",
+  "Total Scaned Hosts": "Total Scaned Hosts",
+  "Total Scaned Ports": "Total Scaned Ports",
+  "Total Scaned Services": "Total Scaned Services",
+  "VULNERABILITY": "VULNERABILITY",
+  "REPORT//": "REPORT//",
+  "Footer": "Privileged/Confidential Information may be contained in this document. And as such it should not be disclosed, copied, distributed, or used without the express written consent of the sender. This document is intended solely for the use of the individual or entity to whom it is addressed. If you are not the intended recipient, be aware that any review, dissemination, istribution, or copying of this document is strictly prohibited.",
+  "SUMMARY": "SUMMARY",
+  "Summary Content": "The Phalanx Scan Report provides a comprehensive analysis of the security posture of the targeted systems or network infrastructure. Utilizing advanced scanning techniques, the report identifies potential vulnerabilities and security flaws that could be exploited by malicious actors.",
+  "SCAN RESULT": "SCAN RESULT",
+  "Scan Result Content": "The Common Vulnerability Scoring System (CVSS) is a framework for rating the severity of security vulnerabilities in software. CVSS scores provide a way to capture the principal characteristics of a vulnerability and produce a numerical score reflecting its severity. The score can then be used to prioritize response and mitigation strategies based on the risk the vulnerability poses to the system or organization.",
+  "Endpoint Scan": "Endpoint Scan",
+  "Hostname": "Hostname",
+  "MAC Address": "MAC Address",
+  "IP Address": "IP Address",
+  "Ports": "Ports",
+  "Test Range": "Test Range",
+  "Test Range Content": "For this scan, we categorize the results into two groups: IPs with detected vulnerabilities and IPs without detected vulnerabilities. For the IPs with detected  vulnerabilities, list the highest risk level associated with each.",
+  "Test Range Content 2": "IPs without detections, and IPs not detected/scanned within the specified range.",
+  "Tested": "Tested",
+  "Unsuccessful": "Unsuccessful",
+  "Successful": "Successful",
+  "BAS VALIDATION RESULT": "BAS VALIDATION RESULT",
+  "BAS VALIDATION RESULT Content": "Breach and Attack Simulation (BAS) is a security testing methodology aimed at simulating real-world attack scenarios to assess an organization security defenses. This testing method typically utilizes automated tools to simulate various attacks, ranging from network intrusion to malware infections, to help organizations identify vulnerabilities and weaknesses in their systems.",
+  "BAS Validation": "BAS Validation",
+  "Success": "Success",
+  "IP address verified, no vulnerabilities found! Or no data available for this IP.": "IP address verified, no vulnerabilities found! Or no data available for this IP."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+

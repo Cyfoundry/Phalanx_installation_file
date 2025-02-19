@@ -1,0 +1,6 @@
+setup.py
+cusnmap/cusnmap.egg-info/PKG-INFO
+cusnmap/cusnmap.egg-info/SOURCES.txt
+cusnmap/cusnmap.egg-info/dependency_links.txt
+cusnmap/cusnmap.egg-info/requires.txt
+cusnmap/cusnmap.egg-info/top_level.txt

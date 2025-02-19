@@ -1,0 +1,160 @@
+generator client {
+  provider        = "prisma-client-js"
+  output          = "../src/backend/lib/@prisma-reconnaissance/prisma/client"
+  previewFeatures = ["filterJson"]
+  binaryTargets   = ["native", "debian-openssl-1.1.x", "debian-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL_MONGO1")
+}
+
+type NmapResult {
+  MACaddress String
+  hostname   String
+  ip         String
+  os         String[]
+  ports      NmapResultPorts[]
+}
+
+type NmapResultPorts {
+  cpe             String?
+  port            String
+  product         String
+  service         String
+  state           String
+  version         String
+  vulnerabilities NmapResultPortsVulnerabilities[]
+}
+
+type NmapResultPortsVulnerabilities {
+  cvss_score    String
+  description   String?
+  severity      String
+  vulnerability String
+}
+
+type NucleiResult {
+  ip    String
+  ports NucleiResultPorts[]
+  score BigInt
+}
+
+type NucleiResultPorts {
+  port            String
+  port_type       String
+  vulnerabilities NucleiResultPortsVulnerabilities[]
+}
+
+type NucleiResultPortsVulnerabilities {
+  /// Multiple data types found: Float: 78%, Int: 22% out of 666 sampled entries
+  cvss_score    Json?
+  description   String
+  severity      String
+  vulnerability String
+}
+
+type ReportResult {
+  hostname String
+  ip       String
+  mac      String
+  os       String[]
+  ports    ReportResultPorts[]
+  score    BigInt
+}
+
+type ReportResultPorts {
+  cpe           String?
+  port          String
+  port_type     String?
+  product       String
+  service       String
+  state         String
+  version       String
+  vulnerability ReportResultPortsVulnerability[]
+}
+
+type ReportResultPortsVulnerability {
+  bas           Boolean
+  /// Multiple data types found: String: 99.5%, Float: 0.4%, Int: 0.1% out of 9787 sampled entries
+  cvss_score    Json?
+  description   String?
+  severity      String
+  solution      String?
+  vulnerability String
+}
+
+model crawler {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
+
+model dirsearch {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
+
+model discovery {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
+
+model exploit_port {
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  port   Int
+  taskId String
+}
+
+model nmap {
+  id     String       @id @default(auto()) @map("_id") @db.ObjectId
+  result NmapResult[]
+  taskId String
+}
+
+model nuclei {
+  id          String         @id @default(auto()) @map("_id") @db.ObjectId
+  result      NucleiResult[]
+  taskId      String
+  total_score BigInt
+}
+
+model report {
+  id           String         @id @default(auto()) @map("_id") @db.ObjectId
+  result       ReportResult[]
+  taskDateTime DateTime       @db.Date
+  taskId       String
+  total_score  BigInt?
+}
+
+model scan_tool {
+  id        String @id @default(auto()) @map("_id") @db.ObjectId
+  rename    String
+  step      Int
+  tool_name String
+}
+
+model task {
+  id           String    @id @default(auto()) @map("_id") @db.ObjectId
+  company      String?
+  createId     String
+  createTime   DateTime  @db.Date
+  description  String
+  history      String[]
+  modifyId     String
+  modifyTime   DateTime  @db.Date
+  name         String
+  scanSpeed    String
+  scanType     String
+  status       BigInt
+  target       String[]
+  taskDateTime DateTime  @db.Date
+  taskDoneTime DateTime? @db.Date
+}
+
+model vulndata {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  CVE      String
+  Impact   String
+  Insight  String
+  Name     String
+  Solution String
+  Summary  String
+}

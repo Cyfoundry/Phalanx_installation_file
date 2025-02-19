@@ -1,0 +1,242 @@
+2023/05/05 00:40:24 Need ( -url | -file | -d ) to set target
+2023/05/11 09:33:46 json json: cannot unmarshal object into Go value of type []main.jsonData
+2023/05/11 09:33:47 json json: cannot unmarshal object into Go value of type []main.jsonData
+2023/05/11 09:33:48 json json: cannot unmarshal object into Go value of type []main.jsonData
+2023/05/11 09:33:49 json json: cannot unmarshal object into Go value of type []main.jsonData
+2023/05/11 09:34:05 json json: cannot unmarshal object into Go value of type []main.jsonData
+2023/05/11 09:43:53 json json: cannot unmarshal object into Go value of type []main.jsonData
+2023/05/11 09:44:09 json json: cannot unmarshal object into Go value of type []main.jsonData
+2023/05/11 09:44:10 json json: cannot unmarshal object into Go value of type []main.jsonData
+2023/05/11 09:44:11 json json: cannot unmarshal object into Go value of type []main.jsonData
+2023/05/11 09:44:12 json json: cannot unmarshal object into Go value of type []main.jsonData
+2023/09/27 04:13:48 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 04:13:48 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/27 04:13:48 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 04:13:48 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/27 04:13:48 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/27 04:13:48 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/27 04:13:48 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/27 04:13:48 Use default user-agent
+2023/09/27 04:19:24 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 04:19:24 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/27 04:19:24 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 04:19:24 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/27 04:19:24 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/27 04:19:24 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/27 04:19:24 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/27 04:19:24 Use default user-agent
+2023/09/27 04:23:40 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 04:23:40 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/27 04:23:40 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 04:23:40 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/27 04:23:40 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/27 04:23:40 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/27 04:23:40 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/27 04:23:40 Use default user-agent
+2023/09/27 04:39:36 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 04:39:36 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/27 04:39:36 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 04:39:36 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/27 04:39:36 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/27 04:39:36 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/27 04:39:36 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/27 04:39:36 Use default user-agent
+2023/09/27 05:56:52 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 05:56:52 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/27 05:56:52 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 05:56:52 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/27 05:56:52 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/27 05:56:52 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/27 05:56:52 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/27 05:56:52 Use default user-agent
+2023/09/27 06:01:48 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:01:48 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/27 06:01:48 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:01:48 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/27 06:01:48 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/27 06:01:48 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/27 06:01:48 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/27 06:01:48 Use default user-agent
+2023/09/27 06:06:04 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:06:04 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/27 06:06:04 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:06:04 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/27 06:06:04 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/27 06:06:04 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/27 06:06:04 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/27 06:06:04 Use default user-agent
+2023/09/27 06:10:41 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:10:41 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/27 06:10:41 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:10:41 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/27 06:10:41 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/27 06:10:41 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/27 06:10:41 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/27 06:10:41 Use default user-agent
+2023/09/27 06:15:37 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:15:37 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/27 06:15:37 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:15:37 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/27 06:15:37 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/27 06:15:37 Use default user-agent
+2023/09/27 06:15:38 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:15:38 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/27 06:15:38 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:15:38 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/27 06:15:38 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/27 06:15:38 Use default user-agent
+2023/09/27 06:15:54 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:15:54 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/27 06:15:54 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:15:54 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/27 06:15:54 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/27 06:15:54 Use default user-agent
+2023/09/27 06:15:55 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:15:55 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/27 06:15:55 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/27 06:15:55 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/27 06:15:55 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/27 06:15:55 Use default user-agent
+2023/09/28 00:29:58 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 00:29:58 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 00:29:58 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 00:29:58 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/28 00:29:58 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/28 00:29:58 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 00:29:58 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 00:29:58 Use default user-agent
+2023/09/28 01:06:34 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:06:34 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 01:06:34 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:06:34 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/28 01:06:34 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/28 01:06:34 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 01:06:34 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 01:06:34 Use default user-agent
+2023/09/28 01:09:50 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:09:50 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 01:09:50 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:09:50 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/28 01:09:50 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/28 01:09:50 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 01:09:50 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 01:09:50 Use default user-agent
+2023/09/28 01:14:26 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:14:26 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 01:14:26 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:14:26 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 01:14:26 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 01:14:26 Use default user-agent
+2023/09/28 01:14:27 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:14:27 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 01:14:27 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:14:27 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 01:14:27 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 01:14:27 Use default user-agent
+2023/09/28 01:14:28 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:14:28 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 01:14:28 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:14:28 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 01:14:28 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 01:14:28 Use default user-agent
+2023/09/28 01:14:29 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:14:29 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 01:14:29 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:14:29 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/28 01:14:29 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/28 01:14:29 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 01:14:29 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 01:14:29 Use default user-agent
+2023/09/28 01:14:46 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:14:46 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 01:14:46 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:14:46 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 01:14:46 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 01:14:46 Use default user-agent
+2023/09/28 01:43:44 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:43:44 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 01:43:44 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 01:43:44 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/28 01:43:44 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/28 01:43:44 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 01:43:44 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 01:43:44 Use default user-agent
+2023/09/28 02:44:02 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 02:44:02 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 02:44:02 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 02:44:02 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 02:44:02 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 02:44:02 Use default user-agent
+2023/09/28 02:52:03 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 02:52:03 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 02:52:03 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 02:52:03 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 02:52:03 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 02:52:03 Use default user-agent
+2023/09/28 03:01:39 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:01:39 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 03:01:39 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:01:39 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 03:01:39 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 03:01:39 Use default user-agent
+2023/09/28 03:07:56 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:07:56 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 03:07:56 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:07:56 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 03:07:56 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 03:07:56 Use default user-agent
+2023/09/28 03:15:32 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:15:32 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 03:15:32 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:15:32 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 03:15:32 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 03:15:32 Use default user-agent
+2023/09/28 03:15:48 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:15:48 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 03:15:48 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:15:48 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/28 03:15:48 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/28 03:15:48 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 03:15:48 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 03:15:48 Use default user-agent
+2023/09/28 03:15:49 Need ( -url | -file | -d ) to set target
+2023/09/28 03:15:50 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:15:50 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 03:15:50 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:15:50 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 03:15:50 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 03:15:50 Use default user-agent
+2023/09/28 03:15:51 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:15:51 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 03:15:51 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:15:51 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 03:15:51 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 03:15:51 Use default user-agent
+2023/09/28 03:22:18 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:22:18 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 03:22:18 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:22:18 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 03:22:18 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 03:22:18 Use default user-agent
+2023/09/28 03:22:34 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:22:34 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 03:22:34 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:22:34 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 03:22:34 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 03:22:34 Use default user-agent
+2023/09/28 03:22:35 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:22:35 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 03:22:35 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:22:35 File: /home/sql/binary/sqlidetector/data/payloads.txt not exisit
+2023/09/28 03:22:35 Can't Found Payload:/home/sql/binary/sqlidetector/data/payloads.txt
+2023/09/28 03:22:35 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 03:22:35 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 03:22:35 Use default user-agent
+2023/09/28 03:22:36 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:22:36 Can't Found ERROR:%s /home/sql/binary/sqlidetector/data/sql_errors.txt
+2023/09/28 03:22:36 File: /home/sql/binary/sqlidetector/data/sql_errors.txt not exisit
+2023/09/28 03:22:36 File: /home/sql/binary/sqlidetector/data/user_agents.txt not exisit
+2023/09/28 03:22:36 Can't Found Agent:/home/sql/binary/sqlidetector/data/user_agents.txt
+2023/09/28 03:22:36 Use default user-agent
+2023/10/02 01:20:28 Need ( -url | -file | -d ) to set target
+2023/10/03 05:11:40 Need ( -url | -file | -d ) to set target

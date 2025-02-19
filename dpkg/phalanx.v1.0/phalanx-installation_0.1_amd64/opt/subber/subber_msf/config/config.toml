@@ -1,0 +1,21 @@
+[mode]
+daemon = false
+daemonname="msf-subber-daemon"
+single=true
+[nats_server]
+addr = "nats://127.0.0.1:4222"
+streamName = "COMMANDJOB"
+flowName = "msf"
+
+
+[target]
+executePath = "/opt/subber/subber_msf/exploit"
+binaryPath = ""
+
+[options]
+    [options.t]
+    argv = "--target"
+    [options.ri]
+    argv = "--reverseshell_ip"
+    [options.p]
+    argv = "--reverseshell_port"

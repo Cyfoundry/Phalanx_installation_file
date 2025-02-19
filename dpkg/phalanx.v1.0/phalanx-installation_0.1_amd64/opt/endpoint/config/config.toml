@@ -1,0 +1,30 @@
+[mode]
+daemon = false
+[command_server]
+addr = ":50005"
+use_tls = false
+crt_file = "server.pem"
+key_file = "server.key"
+
+[control_server]
+addr = ":50006"
+use_tls = false
+crt_file = "server.pem"
+key_file = "server.key"
+
+
+[nats_server]
+addr = "nats://127.0.0.1:4222"
+streamName = "COMMANDJOB"
+
+[flows]
+    [flows.crawler]
+    flow = ["crawler","sqlidetector","sqlmap"]
+    [flows.scan]
+    flow = ["nmap","nuclei"]
+    [flows.exploit]
+    flow = ["msf"]
+    [flows.web]
+    flow = ["nikto"]
+    
+

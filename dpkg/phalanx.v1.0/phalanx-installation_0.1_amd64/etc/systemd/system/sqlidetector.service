@@ -1,0 +1,14 @@
+[Unit]
+Description=Sqlidetector Subber Service
+After=sqlmap_server.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/crawler/subbers/sqlidetector/
+ExecStart=/opt/crawler/subbers/sqlidetector/subber
+Restart=on-failure
+StandardOutput=file:/var/log/phalanx/sqlidetector.log
+StandardError=file:/var/log/phalanx/sqlidetector.log
+
+[Install]
+WantedBy=multi-user.target

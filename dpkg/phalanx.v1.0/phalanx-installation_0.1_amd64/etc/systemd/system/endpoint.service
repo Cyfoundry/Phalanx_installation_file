@@ -1,0 +1,15 @@
+[Unit]
+Description=Endpoint Service
+After=nats-server.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/endpoint/
+ExecStartPre=/bin/sleep 20
+ExecStart=/opt/endpoint/endpoint
+Restart=on-failure
+StandardOutput=file:/var/log/phalanx/endpoint.log
+StandardError=file:/var/log/phalanx/endpoint.log
+
+[Install]
+WantedBy=multi-user.target

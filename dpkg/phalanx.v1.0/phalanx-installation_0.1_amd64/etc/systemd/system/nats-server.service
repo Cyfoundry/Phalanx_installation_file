@@ -1,0 +1,12 @@
+[Unit]
+Description=NATS Server
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/nats-server -c /opt/jetsream/js.conf
+Restart=on-failure
+StandardOutput=file:/var/log/phalanx/jetsream.log
+StandardError=file:/var/log/phalanx/jetsream.log
+
+[Install]
+WantedBy=multi-user.target

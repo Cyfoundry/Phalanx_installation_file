@@ -1,0 +1,14 @@
+[Unit]
+Description=Sqlmap API Service
+After=sqlmap_server.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/crawler/binary/sqlmapapi/
+ExecStart=/usr/bin/python3 /opt/crawler/binary/sqlmapapi/sqlmapapi/sqlmapapi.py -s 127.0.0.1 -p 44440
+Restart=on-failure
+SStandardOutput=file:/var/log/phalanx/sqlmapapi.log
+StandardError=file:/var/log/phalanx/sqlmapapi.log
+
+[Install]
+WantedBy=multi-user.target

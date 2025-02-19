@@ -1,0 +1,1 @@
+"use strict";exports.id=5373,exports.ids=[5373],exports.modules={65373:s=>{s.exports=JSON.parse('{"register":"Register","account":"Account","password":"Password","confirm_password":"Confirm Password"}')}};

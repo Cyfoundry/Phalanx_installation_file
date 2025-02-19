@@ -1,0 +1,18 @@
+[mode]
+daemon = false
+daemonname="nuclei-subber-daemon"
+[nats_server]
+addr = "nats://127.0.0.1:4222"
+streamName = "COMMANDJOB"
+flowName = "nuclei"
+
+
+[target]
+executePath = "/usr/bin/python3"
+binaryPath = "/opt/subber/subber_nuclei_1/dict_nuclei/nuclei_main.py"
+
+[options]
+    [options.t]
+    argv = "-t"
+    [options.masterid]
+    argv = "--masterid"

@@ -1,0 +1,22 @@
+{
+    "powerManage": "Power Manage",
+    "create": "Create",
+    "edit": "Edit",
+    "save": "Save",
+    "menuName": "Menu",
+    "title": "Title",
+    "code": "Code",
+    "description": "Description",
+    "sort": "Sort",
+    "isEnable": "IsEnable",
+    "titleRequired": "Title is required",
+    "codeRequired": "Code is required",
+    "descriptionRequired": "Description is required",
+    "sortRequired": "Sort is required",
+    "PleaseEnterTheNumber": "Please enter the number",
+    "required": "{{name}} is required",
+    "confirmDeletion": "Deletion {{title}}?",
+    "typeToConfirmDelete": "Type [{{title}}] to Confirm Deletion",
+    "enterNameToDelete": "Enter the title of the power to confirm deletion:",
+    "nameMismatch": "The entered title does not match the power title."
+}

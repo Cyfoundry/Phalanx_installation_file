@@ -1,0 +1,23 @@
+{
+  "title": "偵查",
+  "company": "公司",
+  "companyLabel": "公司名稱將呈現在報表中",
+  "name": "任務名稱",
+  "target": "目標",
+  "description": "描述",
+  "scanSpeed": "掃描速度",
+  "scanType": "掃描類型",
+  "taskDateTime": "任務開始時間",
+  "taskDoneTime": "任務完成時間",
+  "totalTime":"總花費時間",
+  "status": "狀態",
+  "report": "報告",
+  "downloadReport": "下載報告",
+  "confirmDeletion": "刪除 {{taskName}}?",
+  "typeToConfirmDelete": "再次輸入 {{taskName}} 確認刪除資料:",
+  "enterNameToDelete": "輸入任務名稱以確認刪除。",
+  "nameMismatch": "輸入的名稱與任務名稱不符。",
+  "delete": "刪除",
+  "cancel": "取消",
+  "feachDataErrorMessage": "掃描任務已完成，但沒有掃到任何主機可產出資料，通常是因為輸入的主機不存在，請確認輸入的IP主機均有連結在同一個子網路。"
+}

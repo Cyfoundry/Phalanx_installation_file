@@ -1,0 +1,9 @@
+[Match]
+Name={{.NetInterfaceName}}
+
+[Link]
+MTUBytes=1500
+
+[Network]
+DHCP=yes
+IPv6AcceptRA=yes

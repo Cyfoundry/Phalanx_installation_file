@@ -1,0 +1,1 @@
+"use strict";exports.id=3716,exports.ids=[3716],exports.modules={53716:e=>{e.exports=JSON.parse('{"title":"儀表板","targets":"目標數量","identifiedService":"已識別服務","vulnerabilities":"漏洞數量"}')}};

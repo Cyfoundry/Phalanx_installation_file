@@ -1,0 +1,1 @@
+"use strict";exports.id=296,exports.ids=[296],exports.modules={30296:s=>{s.exports=JSON.parse('{"scan_report":"Scan Report"}')}};

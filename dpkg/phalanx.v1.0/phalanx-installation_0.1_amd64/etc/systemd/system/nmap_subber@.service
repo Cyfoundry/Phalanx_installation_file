@@ -1,0 +1,17 @@
+[Unit]
+Description=Nmap Subber service instance %i
+After=jobmanager.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/subber/subber_nmap_%i/
+ExecStart=/opt/subber/subber_nmap_%i/subber
+Restart=on-failure
+StandardOutput=file:/var/log/phalanx/nmap_%i.log
+StandardError=file:/var/log/phalanx/nmap_%i.log
+
+[Install]
+WantedBy=multi-user.target
+
+
+

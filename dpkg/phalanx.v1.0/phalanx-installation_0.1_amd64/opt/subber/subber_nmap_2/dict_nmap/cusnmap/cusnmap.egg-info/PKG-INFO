@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: cusnmap
+Version: 0.1
+Summary: Hook Nmap to Scan
+Home-page: https://cyfoundry.local.com
+Author: jimchang,nilo
+Author-email: jimchang@cyfoundry.com,nilo@cyfoundry.com
+License: MIT

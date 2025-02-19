@@ -1,0 +1,21 @@
+[mode]
+daemon = false
+daemonname="sqli-subber-daemon"
+[nats_server]
+addr = "nats://127.0.0.1:4222"
+streamName = "COMMANDJOB"
+flowName = "sqlidetector"
+
+
+
+[target]
+executePath = "/opt/crawler/binary/sqlidetector/SQLiDetector-go_linux"
+binaryPath = ""
+mix = true
+
+[options]
+    [options.data]
+    argv = "-d"
+    passdata = true
+    [options.r]
+    argv = "-r"

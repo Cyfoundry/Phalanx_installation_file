@@ -1,0 +1,16 @@
+[mode]
+daemon = false
+daemonname="nikto-subber-daemon"
+[nats_server]
+addr = "nats://127.0.0.1:4222"
+streamName = "COMMANDJOB"
+flowName = "nikto"
+
+
+[target]
+executePath = "/opt/subber/subber_nikto/dict_nikto/Nikto-go"
+binaryPath = ""
+
+[options]
+    [options.t]
+    argv = "-host"

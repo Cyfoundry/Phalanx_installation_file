@@ -1,0 +1,1 @@
+"use strict";exports.id=6231,exports.ids=[6231],exports.modules={76231:s=>{s.exports=JSON.parse('{"register":"註冊","account":"帳號","password":"密碼","confirm_password":"確認密碼"}')}};

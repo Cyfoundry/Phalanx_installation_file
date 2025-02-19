@@ -1,0 +1,1 @@
+"use strict";exports.id=7660,exports.ids=[7660],exports.modules={57660:s=>{s.exports=JSON.parse('{"register":"登録","account":"アカウント","password":"パスワード","confirm_password":"パスワードを確認"}')}};

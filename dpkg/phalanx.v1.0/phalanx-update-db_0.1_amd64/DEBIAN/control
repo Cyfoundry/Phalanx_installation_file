@@ -1,0 +1,11 @@
+Package: phalanx-update-db
+Version: 0.1
+Section: utils
+Priority: extra
+Architecture: amd64
+Multi-Arch: foreign
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Maintainer: cyfoundry <support@cyfoundry.com>
+Homepage: https://cyfoundry.com/
+Description: phalanx db package

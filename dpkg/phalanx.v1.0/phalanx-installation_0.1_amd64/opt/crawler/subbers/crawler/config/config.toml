@@ -1,0 +1,19 @@
+[mode]
+daemon = false
+daemonname="crawler-subber-daemon"
+[nats_server]
+addr = "nats://127.0.0.1:4222"
+streamName = "COMMANDJOB"
+flowName = "crawler"
+
+
+[target]
+executePath = "/opt/crawler/binary/crawler/crawler_linux"
+binaryPath = ""
+mix = true
+
+[options]
+    [options.r]
+    argv = "-r"
+    [options.u]
+    argv = "-u"    

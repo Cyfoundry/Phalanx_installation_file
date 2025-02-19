@@ -1,0 +1,31 @@
+#!/usr/bin/expect -f
+
+
+#exp_internal 1
+
+
+set timeout -1
+
+
+spawn msfconsole
+
+
+expect {
+    -re {Would you like to use and setup a new database \(recommended\)\?} {
+        # 回答 "yes" 并按回车
+        send "yes\r"
+        sleep 1
+        exp_continue
+    }
+    -re {msf.*>} {
+
+        send "exit\r"
+    }
+    timeout {
+
+        send_user "Timeout or unexpected output from msfconsole\n"
+        exit 1
+    }
+}
+
+expect eof

@@ -1,0 +1,14 @@
+[Unit]
+Description=Systemd DHCP
+After=network.target
+
+[Service]
+Type=simple
+
+ExecStart=/usr/sbin/phalanxDHCP
+PermissionsStartOnly=true
+ExecStartPre=/bin/mkdir -p /var/log/phalanx
+ExecStartPre=/bin/touch /var/log/phalanx/dhcp.log
+ExecStartPre=/bin/chmod -R 755 /var/log/phalanx
+[Install]
+WantedBy=multi-user.target
